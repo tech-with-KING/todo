@@ -1,0 +1,19 @@
+{
+  "name": "my_blogs_api",
+  "version": "1.0.0",
+  "description": "my blogs api",
+  "main": "index.js",
+  "scripts": {
+    "script": "nodemon indesx.js",
+    "start": "nodemon index.js"
+  },
+  "author": "kingsley francis",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.16"
+  }
+}
