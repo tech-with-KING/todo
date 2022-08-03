@@ -1,0 +1,24 @@
+/* Slideshow container */
+.slideshow-container {
+    width: unset;
+    background: red;
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    justify-content: center;
+}
+.light{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 50px;
+    }
+
+.hello{
+    height: inherit;
+    width: 20%;
+    min-width: 120px;
+    background-color: blue;
+}
