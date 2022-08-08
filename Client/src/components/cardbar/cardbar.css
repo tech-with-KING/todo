@@ -1,8 +1,8 @@
 .card_to {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 500px;
-    width: 30vw;
+    width: inherit;
     min-width: 250px;
+    max-width: 90vw;
     height: inherit;
     border-radius: 5px;
     text-align: center;

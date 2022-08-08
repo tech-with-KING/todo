@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 class Card_componnt extends Component {
     state = {  } 
     render() { 
-	const {toggle,set_toggle}=props
+	const {toggle,set_toggle}=this.props
 	const set_style = ()=>
        {
 	   const style = { fontSize: '30px', fontWeight: 'bold', transition: "0.5s ease-in" }

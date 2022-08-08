@@ -3,8 +3,8 @@ import "./tobar.css"
 import MenuIcon from '@mui/icons-material/Menu';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import ClearTwoToneIcon from '@mui/icons-material/ClearTwoTone';
-const Top_bar=(props)=>{
-
+const Top_bar=()=>{
+    const toggle = true
     const make_menue_toggle=()=>{
 	set_toggle()
     }

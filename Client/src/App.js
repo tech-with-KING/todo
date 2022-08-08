@@ -17,7 +17,7 @@ class App extends Component {
 			<Router>
 			<Routes>
 			<Route path="/add_todo" element={<Slide_Bar toggle={toggle} set_toggle={set_toggle}/>} />
-			<Route path="/" element={<><Top_Bar /><Slide_Bar/></>} />
+			<Route path="/" element={<><Top_Bar /><Menue_Bar/><Slide_Bar/></>} />
 
 		    </Routes>
 		 </Router>

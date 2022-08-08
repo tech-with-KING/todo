@@ -1,10 +1,11 @@
 /* Slideshow container */
 .slideshow-container {
     width: unset;
-    background: red;
+    background: transparent;
     display: flex;
     flex-direction: row;
     height: inherit;
+    border-radius: 5px;
     justify-content: center;
 }
 .light{
@@ -18,7 +19,23 @@
 
 .hello{
     height: inherit;
-    width: 20%;
-    min-width: 120px;
-    background-color: blue;
+    width: 25%;
+    max-width: 150px;
+    min-width: 120px; 
+    max-height: 500px;
+    background-color: navy;
+}
+@media screen and (min-width:400px){
+    
+    .hello{
+	min-width: 200px;
+    }
+    
+}
+@media screen and (min-width:700px){
+    
+    .hello{
+	min-width: 300px;
+    }
+    
 }
