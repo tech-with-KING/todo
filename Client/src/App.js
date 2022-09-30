@@ -1,12 +1,14 @@
+
 import React, { Component } from 'react';
 import './App.css';
 import Slide_Bar from './components/slidder/slidebar'
+import SignIn from './components/sync_components/signin'
 import Top_Bar from './nav/topbar'
 import Menue_Bar from './nav/menue'
 import { BrowserRouter as Router, Routes, Route,Outlet } from "react-router-dom"
 class App extends Component {
 	state = {
-		toggle:false
+		toggle:true
 	}
 
 	render() {
@@ -18,6 +20,7 @@ class App extends Component {
 			<Top_Bar /><Menue_Bar/>
 			<Routes>
 			<Route path="/add_todo" element={<Slide_Bar toggle={toggle} set_toggle={set_toggle}/>} />
+			<Route path="/sync_now" element={<SignIn toggle={toggle} set_toggle={set_toggle}/>} />
 			<Route path="/" element={<><Slide_Bar/></>} />
 		    </Routes>
 		 </Router>

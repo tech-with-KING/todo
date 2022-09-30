@@ -20,7 +20,7 @@ const Top_bar=()=>{
 	    <div className='ico'onClick={()=>{make_menue_toggle()}} >
 	    {set_style()}
         </div>
-	    <h2>Cosmic Shool</h2>
+	    <h1>Planner</h1>
 	    <div className='light'>
 	        <DarkModeIcon />
 	    </div>

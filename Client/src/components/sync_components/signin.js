@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import ClearTwoToneIcon from '@mui/icons-material/ClearTwoTone';
 import MenuIcon from '@mui/icons-material/Menu';
-import "./modalbox.css"
+import "./signin.css"
+import {Link} from "react-router-dom"
 import {motion} from 'framer-motion'
-class AddTodo extends Component {
-    state = {  } 
-    render() { 
+class SignIn extends Component {
+    state = {  }
+    render() {
 	const {toggle,set_toggle}=this.props
 	const set_style = ()=>
        {
@@ -18,24 +19,22 @@ class AddTodo extends Component {
         return (
         <>
 		<div className="addTodo" style={{minHeight:'400px'}}>
-		
+
 		<div className='ba' >
-		<h2>Add Task</h2>
+		<h2>Login/Register</h2>
 		{set_style()}
             </div>
 		<div className='todo_form_container'>
-		<div className='todo_form'><button className='button' >task :</button><input placeholder='task ...'/></div>
-		<div className='todo_form' ><button className='button'>start-time :</button><input placeholder='start time...'/></div>
-		<div className='todo_form'><button className='button'>finish-time :</button><input placeholder='finish time...'/></div>
-		<div className='notes'><button>notes :</button><input className='note' placeholder='notes...'/></div>
-
+		<div className='todo_form'><button className='button' >Username:</button><input placeholder='task ...'/></div>
+		<div className='todo_form' ><button className='button'>password:</button><input placeholder='start time...'/></div>
 		</div>
-		
+		<p>first time signing in<Link  to={'/sync_now/register'}> register</Link></p>
+		<p><Link  to={'/sync_now/forgot_password'}>forgot password</Link></p>
 		<div className='add_btn'><button>Add</button></div>
             </div>
        </>
         );
     }
 }
- 
-export default AddTodo;
+
+export default SignIn;

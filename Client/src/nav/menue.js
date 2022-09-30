@@ -18,8 +18,9 @@ const Menue_Bar=(props)=>{
     return(
 	<div className = "top_bar">
 	    <div className='navbar' >
-	    <Link className='li' to={'/completed'}> <CheckBox style={{ marginRight: '5px' }} />completed</Link>
-	    <Link className='li' to={'/completed'}> <Sync style={{ marginRight: '5px' }} />Sync now</Link>
+	    <Link className='li' to={'/'}> <Check style={{ marginRight: '5px' }} />Tasks</Link>
+	    <Link className='li' to={'/completed'}> <CheckBox style={{ marginRight: '5px' }} />Completed</Link>
+	    <Link className='li' to={'/sync_now'}> <Sync style={{ marginRight: '5px' }} />Sync Now</Link>
 	    </div>
 	    </div>
     )

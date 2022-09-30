@@ -21,8 +21,9 @@ class Slide_Bar extends Component {
 		
 		</ul>
 		</div>
+		{toggle ? 
                 <Card_componnt toggle={toggle} set_toggle={set_toggle} />
-		{/*<AddTodo/>*/}
+		:<AddTodo toggle={toggle} set_toggle={set_toggle} />}
 		</div>
         
  );
